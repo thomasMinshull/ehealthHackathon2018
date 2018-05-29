@@ -49,6 +49,10 @@ class MapViewController: UIViewController, MKMapViewDelegate {
             
             let checkedInRegion = CLCircularRegion(center: hospitalCoordiante, radius: 2, identifier: "Hacking Health Clinic")
             
+            locationManager.startMonitoring(for: needsAssistanceRegion)
+            locationManager.startMonitoring(for: checkedInRegion)
+            
+            
             // add anotation for hospital
 //            let restaurantAnnotation = MKPointAnnotation()
 //            restaurantAnnotation.coordinate = coordinate;
@@ -87,6 +91,31 @@ class MapViewController: UIViewController, MKMapViewDelegate {
 extension MapViewController: CLLocationManagerDelegate {
     func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
         mapView.showsUserLocation = status == .authorizedAlways
+    }
+    
+    func locationManager(_ manager: CLLocationManager, monitoringDidFailFor region: CLRegion?, withError error: Error) {
+        print("Monitoring failed for region with identifier: \(region!.identifier)")
+    }
+    
+    func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
+        print("Location Manager failed with the following error: \(error)")
+    }
+    
+    func locationManager(_ manager: CLLocationManager, didEnterRegion region: CLRegion) {
+        
+        if let circularRegion = region as? CLCircularRegion,
+            circularRegion.radius <= 3 {
+            // ToDo display Checkend in  Notification
+            let alert = UIAlertController(title: "On our Way", message: "A assitant has been notified that you are on your way, and will be ready to assist you.", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+            self.present(alert, animated: true)
+            
+        } else {
+            // ToDo display Attendent has been notified that you can
+            let alert = UIAlertController(title: "You've Arrived", message: "The hospital staff have been notified that you've arived and begun checking you in.", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+            self.present(alert, animated: true)
+        }
     }
 }
 
