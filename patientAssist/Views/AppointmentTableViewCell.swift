@@ -33,7 +33,7 @@ class AppointmentTableViewCell: UITableViewCell {
     }
     
     @IBAction func switchToggled(_ sender: Any) {
-        delegate?.toggleNeedsAssitaneForAppointment(id: appointementId!)
+        delegate?.toggleNeedsAssitaneForAppointment(id: "")
     }
     
 }

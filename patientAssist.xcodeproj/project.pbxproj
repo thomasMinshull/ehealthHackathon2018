@@ -44,6 +44,9 @@
 		55EBE2C520BCD85000BD6E74 /* Appointment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Appointment.swift; sourceTree = "<group>"; };
 		55EBE2CA20BDD3AE00BD6E74 /* hackinghealth.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = hackinghealth.gpx; sourceTree = "<group>"; };
 		55EBE2CB20BDD4E900BD6E74 /* hackinghealth.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = hackinghealth.gpx; path = ../../Desktop/hackinghealth.gpx; sourceTree = "<group>"; };
+		55EBE2CC20BDED1400BD6E74 /* ParqVancouver.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = ParqVancouver.gpx; sourceTree = "<group>"; };
+		55EBE2CD20BDED1E00BD6E74 /* gasTown.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = gasTown.gpx; sourceTree = "<group>"; };
+		55EBE2CE20BDED2900BD6E74 /* PoCo.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = PoCo.gpx; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +70,9 @@
 		55EBE28D20BC70B300BD6E74 = {
 			isa = PBXGroup;
 			children = (
+				55EBE2CE20BDED2900BD6E74 /* PoCo.gpx */,
+				55EBE2CD20BDED1E00BD6E74 /* gasTown.gpx */,
+				55EBE2CC20BDED1400BD6E74 /* ParqVancouver.gpx */,
 				55EBE2CA20BDD3AE00BD6E74 /* hackinghealth.gpx */,
 				55EBE2CB20BDD4E900BD6E74 /* hackinghealth.gpx */,
 				55EBE29820BC70B300BD6E74 /* patientAssist */,
