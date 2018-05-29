@@ -88,8 +88,28 @@ class TableViewController: UITableViewController, AppointmentViewCellDelegate {
     func performSegueForAppointment(id: String) {
         //ToDo fetch the data for Appointment by Id
         // call segue and pass information forward
+      
+      performSegue(withIdentifier: "segueTableToMap", sender: nil)
     }
-    
+  
+  //  // In a storyboard-based application, you will often want to do a little preparation before navigation
+//  override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+    // Get the new view controller using segue.destinationViewController.
+    // Pass the selected object to the new view controller.
+//    if segue.identifier == "unwindSegueToDealVC" {
+//
+//      let dealVC = segue.destination as! DealViewController
+//      dealVC.selectedDealCategory = enumSelectedDealCategory.enumMyDeals
+//      dealVC.tempDealPlace = tempDealPlace
+//
+//    } else if segue.identifier == "segueFromMyDealsToMapView" {
+//
+//      let mapVC = segue.destination as! MapViewController
+//      mapVC.selectedDealCategory = enumSelectedDealCategory.enumMyDeals
+//    }
+//  }
+
+  
     func toggleNeedsAssitaneForAppointment(id: String) {
         // ToDo update the NeedsAssistanceForAppointment value for the associated appointment
     }
