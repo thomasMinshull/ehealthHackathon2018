@@ -20,7 +20,9 @@ class AppointmentTableViewCell: UITableViewCell {
     func configureWith(appointment: Appointment) {
         //appointementId = appointment.id
         // ToDo Need to populate Dr Label
+        drLabel.text = appointment.physicianId
         timeLabel.text = appointment.startTime
+        clinicLabel.text = appointment.aptLocation
         // ToDo clinic label
         toggle.isOn = appointment.isAssitanceRequired()
         
