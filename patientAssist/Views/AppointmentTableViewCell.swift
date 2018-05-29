@@ -29,7 +29,7 @@ class AppointmentTableViewCell: UITableViewCell {
     }
     
     @IBAction func DirectionsButtonTapped(_ sender: Any) {
-        delegate?.performSegueForAppointment(id: appointementId!)
+        delegate?.performSegueForAppointment(id: "")
     }
     
     @IBAction func switchToggled(_ sender: Any) {

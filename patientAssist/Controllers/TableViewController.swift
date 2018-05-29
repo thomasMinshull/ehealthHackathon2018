@@ -78,7 +78,7 @@ class TableViewController: UITableViewController, AppointmentViewCellDelegate {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! AppointmentTableViewCell
-        
+        cell.delegate = self as? AppointmentViewCellDelegate
         cell.configureWith(appointment: appointments[indexPath.row])
         
         return cell
