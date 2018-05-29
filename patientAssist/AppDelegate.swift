@@ -7,18 +7,19 @@
 //
 
 import UIKit
+import MapKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
+    var locationManager =  CLLocationManager()
+    
     var window: UIWindow?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        /* from apple documentation:
-            Don't request authorization at launch time unless you need the user's location immediately
-            or were launched in the background to receive a location update.
-         */
-
+    
+        locationManager.requestAlwaysAuthorization()
+        locationManager.requestWhenInUseAuthorization()
+        
         return true
     }
 
