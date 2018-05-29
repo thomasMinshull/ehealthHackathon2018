@@ -16,13 +16,13 @@ class MapViewController: UIViewController, MKMapViewDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        mapView.delegate = self as MKMapViewDelegate
         locationManager.delegate = self
+        
         locationManager.requestAlwaysAuthorization()
         locationManager.requestWhenInUseAuthorization()
         locationManager.distanceFilter = kCLLocationAccuracyBest
         
-        mapView.delegate = self as MKMapViewDelegate
         mapView.showsUserLocation = true
         mapView.userTrackingMode = .follow
         

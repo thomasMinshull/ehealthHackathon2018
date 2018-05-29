@@ -42,6 +42,8 @@
 		55EBE2BB20BCBDE300BD6E74 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		55EBE2BE20BCBE2900BD6E74 /* AppointmentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppointmentTableViewCell.swift; sourceTree = "<group>"; };
 		55EBE2C520BCD85000BD6E74 /* Appointment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Appointment.swift; sourceTree = "<group>"; };
+		55EBE2CA20BDD3AE00BD6E74 /* hackinghealth.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = hackinghealth.gpx; sourceTree = "<group>"; };
+		55EBE2CB20BDD4E900BD6E74 /* hackinghealth.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = hackinghealth.gpx; path = ../../Desktop/hackinghealth.gpx; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +67,8 @@
 		55EBE28D20BC70B300BD6E74 = {
 			isa = PBXGroup;
 			children = (
+				55EBE2CA20BDD3AE00BD6E74 /* hackinghealth.gpx */,
+				55EBE2CB20BDD4E900BD6E74 /* hackinghealth.gpx */,
 				55EBE29820BC70B300BD6E74 /* patientAssist */,
 				55EBE2AD20BC70B500BD6E74 /* patientAssistTests */,
 				55EBE29720BC70B300BD6E74 /* Products */,
