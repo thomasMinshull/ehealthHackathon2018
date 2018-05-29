@@ -39,10 +39,10 @@
 
 import Foundation
 
-struct Appointment: Codable {
+struct Appointment {
     
-    let id: Int
-    let physicianId: Int
+    let id: String
+    let physicianId: String  // physician's name
     let startTime: String
     let endTime: String
     let typeId: Int
@@ -50,7 +50,7 @@ struct Appointment: Codable {
     let patientId: Int
     let patientArrived: String
     let requiresAssistance: String
-    let aptLocation: String
+    let aptLocation: String  // clinic name
     
     func hasPatientArrived() -> Bool {
         return patientArrived == "T"
@@ -59,4 +59,5 @@ struct Appointment: Codable {
     func isAssitanceRequired() -> Bool {
         return requiresAssistance == "T"
     }
+  
 }

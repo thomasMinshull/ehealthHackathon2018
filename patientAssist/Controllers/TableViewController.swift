@@ -27,6 +27,41 @@ class TableViewController: UITableViewController, AppointmentViewCellDelegate {
 //        let appointmentWrapper = try! JSONDecoder().decode(Appointment.self, from: data)
 //        
 //        print(appointmentWrapper)
+      
+      let sampleData0 = Appointment(id: "A01",
+                                    physicianId: "Dr. Minshull",
+                                    startTime: "9:00",
+                                    endTime: "9:15",
+                                    typeId: 1,
+                                    changeId: 1,
+                                    patientId: 1,
+                                    patientArrived: "TRUE",
+                                    requiresAssistance: "TRUE",
+                                    aptLocation: "1 Main St.")
+      
+      let sampleData1 = Appointment(id: "A02",
+                                    physicianId: "Dr. Tu",
+                                    startTime: "9:45",
+                                    endTime: "10:00",
+                                    typeId: 2,
+                                    changeId: 2,
+                                    patientId: 2,
+                                    patientArrived: "TRUE",
+                                    requiresAssistance: "FALSE",
+                                    aptLocation: "100 Marine Dr.")
+      
+      let sampleData2 = Appointment(id: "A03",
+                                    physicianId: "Dr. Ward",
+                                    startTime: "11:30",
+                                    endTime: "11:45",
+                                    typeId: 3,
+                                    changeId: 3,
+                                    patientId: 3,
+                                    patientArrived: "FALSE",
+                                    requiresAssistance: "TRUE",
+                                    aptLocation: "200 1st Ave.")
+      
+      appointments.append(contentsOf: [sampleData0, sampleData1, sampleData2])
     }
     
     
