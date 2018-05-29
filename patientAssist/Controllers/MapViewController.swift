@@ -33,6 +33,13 @@ class MapViewController: UIViewController, MKMapViewDelegate {
             mapView.showsUserLocation = true
         }
         locationManager.startUpdatingLocation()
+      
+      let anno = MKPointAnnotation()
+      anno.coordinate = CLLocationCoordinate2D(latitude: 49.275691 , longitude: -123.114006)
+      anno.title = "Parq Vancouver"
+      
+      mapView.addAnnotation(anno)
+
     }
 
 }
