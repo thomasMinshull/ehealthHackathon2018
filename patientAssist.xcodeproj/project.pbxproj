@@ -16,7 +16,6 @@
 		55EBE2BC20BCBDE300BD6E74 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55EBE2BB20BCBDE300BD6E74 /* MapViewController.swift */; };
 		55EBE2BF20BCBE2900BD6E74 /* AppointmentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55EBE2BE20BCBE2900BD6E74 /* AppointmentTableViewCell.swift */; };
 		55EBE2C620BCD85000BD6E74 /* Appointment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55EBE2C520BCD85000BD6E74 /* Appointment.swift */; };
-		55EBE2C820BD1F0300BD6E74 /* AppointmentArrayWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55EBE2C720BD1F0300BD6E74 /* AppointmentArrayWrapper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,7 +42,6 @@
 		55EBE2BB20BCBDE300BD6E74 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		55EBE2BE20BCBE2900BD6E74 /* AppointmentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppointmentTableViewCell.swift; sourceTree = "<group>"; };
 		55EBE2C520BCD85000BD6E74 /* Appointment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Appointment.swift; sourceTree = "<group>"; };
-		55EBE2C720BD1F0300BD6E74 /* AppointmentArrayWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppointmentArrayWrapper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,7 +133,6 @@
 			isa = PBXGroup;
 			children = (
 				55EBE2C520BCD85000BD6E74 /* Appointment.swift */,
-				55EBE2C720BD1F0300BD6E74 /* AppointmentArrayWrapper.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -245,7 +242,6 @@
 				55EBE2BC20BCBDE300BD6E74 /* MapViewController.swift in Sources */,
 				55EBE2C620BCD85000BD6E74 /* Appointment.swift in Sources */,
 				55EBE2BA20BCBDC700BD6E74 /* TableViewController.swift in Sources */,
-				55EBE2C820BD1F0300BD6E74 /* AppointmentArrayWrapper.swift in Sources */,
 				55EBE2BF20BCBE2900BD6E74 /* AppointmentTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
